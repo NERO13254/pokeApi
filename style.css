@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#closeSearcher{
+    display: none !important;
+}
+.show{
+    display: block !important;
+}
+.desplegate{
+    height: 90vh !important;
+}
+.containerAll{
+    height: 100vh;
+    background: #333;
+    color: white;
+    cursor: default;
+    overflow: scroll;
+}
+*::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+    background-color: #f3f3f3f3;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.controllerContainer{
+    height: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonContent{
+    display: grid;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 46%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#buttonContent div{
+    width: 150px;
+    margin: 1% auto 10%;
+    background-color: white;
+    height: 100px;
+    border-radius: 100%;
+    color: black;
+    overflow: hidden;
+    position: relative;
+}
+#buttonContent div img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#resultContainer{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.imgMaximized img{
+    width: 403px;
+    border-radius: 100%;
+}
+#contentInfo{
+    text-align: justify;
+    text-transform: uppercase;
+    margin: 2%;
+    padding: 2% 5%;
+    background: #1c1c1c;
+    border-radius: 30px 0px 0px 30px;
+    transition: all 300ms;
+    position: absolute;
+    z-index: 1;
+    margin-left: 100%;
+}
+#contentInfo strong{
+    font-size: 40px;
+    letter-spacing: 9px;
+}
+#contentInfo p {
+    margin: 2% 0;
+}
+.infoContent {
+    width: 90%;
+}
+
+@keyframes setIN{
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+
+.showElement{
+    animation: setIN 300ms forwards;
+}
+
+#searcherContent{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10% 1fr 10%;
+}
+.searchController{
+    background: #1e1e1e;
+    padding: 2%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#searcherContentInput {
+    font-size: 14px;
+    width: 82%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    height: 30px;
+    text-transform: uppercase;
+    outline: none;
+}
+#startSearch{
+    width: 10%;
+    padding: 0%;
+    background: transparent;
+    border: none;
+    color: white;
+    height: 100%;
+    display: block;
+}
+
+.errorContainer{
+    width: 90%;
+    height: 100%;
+    background: red;
+    color: white;
+    padding: 5%;
+    transition: all 300ms;
+    font-size: 23px;
+}
+#freshSearchsContent{
+    overflow: scroll;   
+}
+.searchedContent {
+    display: block;
+    width: 100%;
+    padding: 3% 0% 3% 6%;
+    margin: 2% 0%;
+    text-align: start;
+    background-color: #655f5f;
+    text-transform: uppercase;
+    font-size: 21px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+}
+.searchedContent strong {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
